@@ -37,7 +37,7 @@ return(
         <input type="text" value={this.state.name} onChange={this.onNameChange} />
      </form>
      <div className="addPlayerBtn">
-       <button> Add Player </button>
+       <button onClick={this.onSubmit}> Add Player </button>
      </div>
   </div>
 
