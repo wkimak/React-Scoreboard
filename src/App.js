@@ -61,6 +61,7 @@ class App extends Component {
   }
 
  addPlayer(name){
+  if(name != ""){
  this.state.initialPlayers.push({
   name: name,
   score: 0,
@@ -69,6 +70,7 @@ class App extends Component {
 
 this.setState(this.state);
 nextId++;
+}
  }
 
  removePlayer(index){
